@@ -1,0 +1,66 @@
+:root {
+    --custom-blue-gradient: #0055A5;
+}
+
+.activity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    /* margin-top: 130px; */
+}
+
+.questions-container {
+    margin-top: 125px;
+}
+
+.question-data {
+    border: 2px solid #3898f2;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.question-data img {
+    align-self: center;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap; /* Allow options to wrap to new row */
+    justify-content: space-between; /* Distribute options evenly between rows */
+}
+
+.option {
+    flex-basis: 48%; /* Each option takes up roughly half the space */
+    margin-bottom: 10px; /* Add some margin between options */
+    list-style: none; /* Remove bullet points */
+}
+
+.option img {
+    width: 100%; /* Make image fill its container */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    max-width: 300px; 
+    max-height: 300px;
+    object-fit: contain; /* Maintain aspect ratio without stretching */
+}
+
+.next-button {
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 2.6rem;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 0.4rem;
+    background: #0055A5;
+    color: white;
+    border: 0.2rem solid white;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: 0.1rem auto;
+}

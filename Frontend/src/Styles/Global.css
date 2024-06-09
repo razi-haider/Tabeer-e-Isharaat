@@ -1,0 +1,1576 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background: black;
+}
+
+/* Login Header Component */
+
+.LoginHeader {
+    background: linear-gradient(180deg, #0055A5 0%, rgba(0, 85, 165, 0.989583) 0.01%, rgba(0, 85, 165, 0.921875) 7.81%, rgba(0, 85, 165, 0.802083) 19.79%, rgba(0, 85, 165, 0.71875) 28.13%, rgba(0, 85, 165, 0.980631) 98.73%, rgba(0, 85, 165, 0) 100%);
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+.LoginHeaderBox {
+    width: 24rem;
+    height: 5rem;
+    border: 2px solid black;
+    background: white;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginHeaderBox img {
+    width: 20rem;
+}
+
+/* Login Content */
+
+
+.LoginContent {
+    background: rgba(30, 30, 30, 1);
+    width: 100%;
+    min-height: calc(100vh - 7rem);
+    padding: 2rem;
+    position: relative;
+    /* padding-top: 10rem; */
+    max-width: 150rem;
+    margin: 0 auto;
+    z-index: 9;
+    margin-top: 7rem !important;
+    height: auto;
+    overflow: auto;
+}
+
+/* Login Form */
+
+.LoginForm {
+    /* max-width: 30rem; */
+    width: 50rem;
+    height: 30rem;
+    background: rgba(172, 213, 251, 1);
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    margin-left: 80%;
+    position: relative;
+    margin-top: 12%;
+}
+
+.LoginFormHeader {
+    height: 4rem;
+    background: #0055A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.LoginFormInputs {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.LoginFormInput {
+    display: flex;
+    background: white;
+    border: 3px solid #0055A5;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 20rem;
+    height: 5rem;
+    max-width: 100%;
+    margin: .8rem auto;
+}
+
+.LoginFormInputImage {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+}
+
+.LoginFormInputImage img {
+    width: 3rem;
+}
+
+.LoginFormInput input {
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: .1rem .8rem;
+    width: calc(100% - 3.6rem);
+    border: none;
+}
+
+.LoginFormInputs input[type="submit"] {
+    background: #0055A5;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: .4rem 3rem;
+    margin: .4rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+
+.LoginForgetPassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.ForgetPasswordLine {
+    width: 30%;
+    background: #0055A5;
+    height: .2rem;
+}
+
+.ForgetPasswordText {
+    color: #0055A5;
+    font-weight: bolder;
+    width: 40%;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.LoginGirlImage {
+    width: 80%;
+    position: absolute !important;
+    left: 215%;
+    top: -15%;
+
+    /* display: none; */
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.LoginDiv {
+    position: relative;
+    width: 100%;
+}
+
+.LoginGirlImage img {
+    max-width: 100%;
+}
+
+.LoginGirlFormBehind {
+    position: relative !important;
+    /* height: calc(100vh - 15rem);
+    display: flex;
+    align-items: center; */
+    max-width: 30rem;
+    /* width: 40%; */
+    /* overflow: hidden; */
+
+}
+
+.BagsImage {
+    width: 18%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.BagsImage img {
+    max-width: 100%;
+
+}
+
+.HandsImage {
+    width: 15%;
+    position: absolute;
+    bottom: 0rem;
+    right: 1rem;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+}
+
+.HandsImage img {
+    max-width: 100%;
+}
+
+/* Student Dashboard Header */
+
+.StudentDashboardHeader {
+    background: linear-gradient(180deg, #0055A5 0%, rgba(0, 85, 165, 0.989583) 0.01%, rgba(0, 85, 165, 0.921875) 7.81%, rgba(0, 85, 165, 0.802083) 19.79%, rgba(0, 85, 165, 0.71875) 28.13%, rgba(0, 85, 165, 0.980631) 98.73%, rgba(0, 85, 165, 0) 100%);
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.StudentDashboardHeaderLinks {
+    /* width: 300rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.StudentDashboardHeaderLink {
+    margin: 0.5rem;
+}
+
+.StudentDashboardHeaderLink a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+    height: 10rem;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.StudentDashboardHeaderLink img {
+    width: 3.4rem;
+    height: 3rem;
+    display: block;
+}
+
+.StudentDashboardGirlBulb {
+    position: absolute;
+    top: 0rem;
+    left: -2%;
+    width: 13%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+}
+
+.StudentDashboardArrowTop {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 8%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+
+    }
+}
+
+.StudentDashboardArrowTop img {
+    max-width: 80%;
+}
+
+.StudentDashboardArrowDown {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 8%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+}
+
+.StudentDashboardGirlBulb img {
+    max-width: 100%;
+}
+
+.StudentDashboardBoy img {
+    max-width: 100%;
+}
+
+.StudentDashboardBoy {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 9%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+
+.StudentDashboardArrowDown img {
+    max-width: 100%;
+}
+
+
+
+.StudentDashboardSubjects {
+    /* width: 50rem; */
+    /* height: 20rem !important; */
+    margin: 0rem auto;
+    margin-top: 7rem;
+    text-align: center;
+}
+
+/* Apply animation to elements with specific class */
+.sparklingLightAnimation {
+    position: relative; /* Ensure relative positioning */
+    overflow: hidden; /* Clip the pseudo-element within the text element */
+    display: inline-block; /* Ensure spans behave like blocks */
+}
+
+/* Apply animation to the pseudo-element for sparkling effect */
+.sparklingLightAnimation::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position relative to the parent (.sparklingLightAnimation) */
+    top: 0; /* Start from top */
+    left: 0; /* Start from left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: 1; /* Ensure sparkle appears above text */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 10%, transparent 70%); /* Sparkle gradient */
+    animation: moveSparkle 2s linear infinite; /* Adjust duration and timing as needed */
+}
+
+/* Define keyframes for moving the sparkle */
+@keyframes moveSparkle {
+    0% {
+        transform: translateX(-100%); /* Start from outside left */
+    }
+    100% {
+        transform: translateX(100%); /* Move to outside right */
+    }
+}
+
+
+
+.StudentDashboardSubject {
+    display: inline-block;
+    background: linear-gradient(180deg, rgba(0, 85, 165, 0.359375) 0%, rgba(247, 251, 255, 0) 100%);
+    height: 20rem;
+    width: 20rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: .5rem;
+
+}
+
+.StudentDashboardSubject img {
+    height: 18rem;
+    width: 18rem;
+    margin-bottom: 1rem;
+}
+
+.StudentDashboardSubject span {
+    background: #0055A5;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: .4rem 2rem;
+    border: 2px solid white;
+    border-radius: .5rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.StudentDashboardSubject a {
+    text-decoration: none;
+}
+
+/* Account */
+
+.AccountGirl {
+    position: absolute;
+    top: -2rem;
+    left: -5%;
+    width: 20%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.AccountGirl img {
+    max-width: 100%;
+    /* margin-left: -10rem; */
+    /* margin-top: -3rem; */
+}
+
+.AccountHandSettings {
+    position: absolute;
+    bottom: 1rem;
+    left: -.4rem;
+    width: 10%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.AccountHandSettings img {
+    max-width: 100%;
+}
+
+.AccountArrow {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 10%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.AccountArrow img {
+    max-width: 100%;
+}
+
+.AccountForm {
+    max-width: 40rem;
+    background: rgba(172, 213, 251, 1);
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+#AccountImageText {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: #0055A5;
+    cursor: pointer;
+}
+
+#noInputPaddingAccount input[type="submit"] {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+
+}
+
+/* Student Dashboard Maths Sidebar */
+
+.StudentDashboardSidebar {
+    width: 15rem;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 7rem);
+    height: auto;
+    overflow: auto;
+    border-radius: .5rem;
+    border: .2rem solid white;
+    position: fixed;
+    left: 0;
+    top: 7rem;
+    z-index: 10;
+    transition: all .5s ease-in-out !important;
+}
+
+.StudentDashboardSidebar h1 {
+    text-align: center;
+    background: -webkit-linear-gradient(#feffff, #c5e3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.StudentDashboardSidebarLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem auto;
+    color: rgba(172, 213, 251, 1);
+    font-size: 1.75rem;
+}
+
+.StudentDashboardSidebarLink img {
+    width: 5rem;
+}
+
+
+.StudentDashboardSidebarCollapse {
+    width: 4rem;
+    position: fixed;
+    left: 13rem;
+    top: 20rem;
+    cursor: pointer;
+    z-index: 11;
+    transition: all .3s ease-in-out !important;
+
+}
+
+/* Mathematics home content */
+
+.MathematicsHomeContent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: calc(100vh - 7rem); */
+    height: auto;
+    top: 0;
+    padding-left: 15rem;
+}
+
+.MathsHomeImage1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 7%;
+    z-index: 1;
+    max-width: 100%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+
+    }
+}
+
+.MathsHomeImage2 {
+    position: absolute;
+    right: 0;
+    bottom: 0rem;
+    width: 10%;
+    z-index: 1;
+    max-width: 100%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+
+    }
+}
+
+.MathsHomeImage3 {
+    position: absolute;
+    right: 35rem;
+    bottom: 1rem;
+    width: 6%;
+    z-index: -1;
+    max-width: 100%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+
+    }
+}
+
+.MathematicsHomeContentVideo {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.gradientText {
+    background: linear-gradient(to right, #066ad5, #ffffff); /* Define your gradient colors */
+    -webkit-background-clip: text; /* Set background-clip to text for webkit browsers */
+    -webkit-text-fill-color: transparent; /* Hide the original text color */
+    background-clip: text; /* Set background-clip to text */
+}
+
+.MathematicsHomeContentVideo iframe {
+    width: 50%;
+
+}
+
+/* Student Dashboard Maths Activites */
+.MathsActivitiesImage1 {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    width: 10%;
+    z-index: -1;
+    max-width: 100%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+
+    }
+}
+
+.ActivityLocked {
+    position: relative;
+    cursor: not-allowed;
+    filter: brightness(0.7);
+}
+
+.ActivityLockedImage {
+    position: absolute;
+    filter: brightness(1.3);
+}
+
+.ActivityLocked span {
+    cursor: not-allowed !important;
+}
+
+/* Activity Templates */
+
+.ActivityTemplateImage1 {
+    width: 10%;
+    position: absolute;
+    right: 0rem;
+    bottom: 0;
+    z-index: -1;
+    max-width: 100%;
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+
+    }
+
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.ActivityHeader {
+    width: 100%;
+    height: 7rem;
+    background: linear-gradient(180deg, #0055A5 0%, rgba(0, 85, 165, 0.989583) 0.01%, rgba(0, 85, 165, 0.921875) 7.81%, rgba(0, 85, 165, 0.802083) 19.79%, rgba(0, 85, 165, 0.71875) 28.13%, rgba(0, 85, 165, 0.980631) 98.73%, rgba(0, 85, 165, 0) 100%);
+    /* position: fixed; */
+    border-radius: .8rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    overflow: auto;
+    max-width: 70rem;
+
+}
+
+.ActivityHeaderText {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background: white;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .4rem;
+    margin: 0rem 1rem;
+}
+
+.ActivityTimer {
+    /* position: absolute; */
+    right: 1rem;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.ActivityTimer img {
+    width: 3rem;
+}
+
+/* Activity Template 1 */
+
+.ActivityTemplate1 {
+    background: black;
+    width: 100%;
+    max-width: 70rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    position: relative;
+    padding: .5rem;
+    border: .2rem solid white;
+}
+
+.ActivityTemplate1QuestionArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ActivityTemplate1Question {
+    width: 50%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ActivityTemplate1Question img {
+    width: 50%;
+    max-width: 10rem;
+}
+
+.ActivityTemplate1Options {
+    width: 50%;
+    /* background: blue; */
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ActivityTemplate1Option {
+    /* display: inline-block; */
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+    margin: .2rem;
+    padding: 1rem;
+    border: .1rem solid var(--custom-blue-gradient);
+    /* float: left;  */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ActivityTemplate1OptionSelected {
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+    margin: .2rem;
+    padding: 1rem;
+    border: .2rem solid #0055A5;
+}
+
+.ActivityTemplate1Option img,
+.ActivityTemplate1OptionSelected img {
+    width: 8rem;
+}
+
+.ActivityTemplate1BackButton,
+.ActivityTemplate1NextButton {
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 2.6rem;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: .4rem;
+    background: #0055A5;
+    color: white;
+    border: .2rem solid white;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: .1rem auto;
+}
+
+.ActivityTemplate1BackButton {
+    top: 3rem;
+    margin-left: 0.6rem;
+}
+.ActivityTemplate1BackButton img {
+    width: 3rem; /* Adjusted width of the image */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    left: -0.9rem; /* Adjust position of the image */
+    top: 50%; /* Adjust vertically centering the image */
+    transform: translateY(-50%); /* Adjust vertically centering the image */
+}
+.ActivityTemplate1NextButton img {
+    position: absolute;
+    width: 3rem;
+    right: -1.5rem;
+    bottom: -.2rem;
+}
+
+
+/* Student Literacy Grades */
+
+.LiteracyGrades {
+    max-width: calc(100vw - 15rem);
+    min-width: 50rem;
+
+    width: 50rem !important;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(0, 85, 165, 0.359375) 0%, rgba(118, 185, 248, 0.358316) 28.75%, rgba(126, 192, 255, 0.358925) 66.25%, rgba(9, 78, 143, 0.349642) 99.99%, rgba(247, 251, 255, 0) 100%);
+    color: white;
+    border-radius: 2rem;
+    /* overflow: visible; */
+}
+
+.LiteracyGrades table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.LiteracyGrades th,
+.LiteracyGrades td {
+    padding: 1rem;
+    text-align: center;
+    border: .2rem solid white;
+    border-collapse: collapse;
+}
+
+.LiteracyGrades th:nth-child(1) {
+    border-left: none;
+}
+
+.LiteracyGrades th:last-child {
+    border-right: none;
+    padding: 2rem 1rem;
+}
+
+.LiteracyGrades th {
+    border-top: none;
+}
+
+.LiteracyGrades td span {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: .5rem 1rem;
+    min-width: 7rem;
+    border: .2rem solid #0055A5;
+    border-radius: 1rem;
+}
+
+.LiteracyGrades table img {
+    width: 3rem;
+    position: absolute;
+    left: -1rem;
+    top: -.3rem;
+}
+
+
+.CustomHeader {
+    background: #0055A5;
+    padding: .5rem 1rem .5rem 3rem;
+    ;
+    border: .2rem solid white;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.LiteracyGradeImageLine {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.LiteracyGradeFinalGrade {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem auto;
+    margin-top: 0;
+
+}
+
+.LiteracyGradeFinalGrade span {
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+/* Teacer Literacy Dashboard Button */
+
+
+.GenerateActivityButton,
+.GenerateActivity input,
+.ActivityType {
+    background: #0055A5;
+    border: none;
+    border: .2rem solid white;
+    border-radius: .4rem;
+    padding: .5rem 1rem;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto;
+}
+
+/* Generate Activity Page */
+
+.GenerateActivity {
+    background: linear-gradient(180deg, rgba(0, 85, 165, 0.359375) 0%, rgba(247, 251, 255, 0) 100%);
+    width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.GenerateActivity input {
+    cursor: text;
+    outline: none;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.GenerateActivityArea {
+    background: black;
+    padding: 2rem;
+    border: .3rem solid white;
+    border-radius: .7rem;
+    margin-bottom: 1rem;
+}
+
+.GenerateActivity textarea {
+    outline: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    min-height: 10rem;
+}
+
+.ActivityType {
+    display: inline-block;
+    margin: .5rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.ActivityTypeSelected {
+    background: black;
+}
+
+/* @media screen and (max-width: 1024px){
+    .MathematicsHomeContent{
+        padding-left: 30rem !important;
+    }
+    
+} */
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+
+    .LoginHeaderBox img {
+        width: 15rem !important;
+    }
+
+    .LiteracyGrades {
+        min-width: 50rem;
+        max-width: 100%;
+
+    }
+
+    .MathematicsHomeContentVideo iframe {
+        width: 100%;
+    }
+
+}
+
+/* ----- Added by ESSA ----- */
+
+/* START HERE */
+
+/* generateActivity.jsx */
+
+.activityContainer {
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 10%;
+    /* margin-top: 8rem; */
+}
+
+.blueBox {
+    background: linear-gradient(180deg, #012d56 0%, rgba(0, 0, 0, 0.9) 100%);
+    width: 100%;
+    height: 48rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+    border-radius: 10px;
+    margin-top: 0;
+    /* top: 4rem; */
+}
+
+.activityNameTextBox {
+    justify-content: center;
+    position: absolute;
+    /* top: 0.15%; */
+    bottom: 43rem;
+    /* left: 3rem; */
+    border-radius: 3px;
+    /* Rounded corners */
+    /* padding: 2px; Add padding */
+    width: 200px;
+    /* Set width */
+}
+
+.activityNameTextBox input[type=text] {
+    /* width: 100%; */
+    padding: 15px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 22px;
+    margin: 5px 3px;
+    
+}
+
+.inputWordsTextBox {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-15%, -50%);
+    color: white;
+    height: 80%;
+    width: 50%;
+}
+.instruction {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    /* left: 10px; */
+    margin-left: 20px;
+    
+}
+
+.glow {
+    color: #ffffff; /* Set text color */
+    text-shadow: 0 0 10px #784747, 0 0 20px #ffffff; /* Glow effect */
+  }
+
+.inputWordsTextBox textarea {
+    height: 70%;
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* .blackBox {
+    background-color: rgb(35, 31, 31);
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid #add8e6;
+    box-sizing: border-box;
+} */
+.blackBox {
+    background-color: rgb(35, 31, 31);
+    width: 90%;
+    height: 75%;
+    margin: auto;
+    position: absolute;
+    bottom: 0; /* Align the bottom of the box with the bottom of its container */
+    left: 50%; /* Center the box horizontally */
+    transform: translateX(-50%); /* Adjust to center the box horizontally */
+    border-radius: 10px;
+    border: 2px solid #add8e6;
+    box-sizing: border-box;
+    margin-bottom: 100px; /* Increase the margin from below to increase the height */
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    color: #007bff;
+}
+
+.buttonsContainer button {
+    background-color: var(--custom-blue-gradient);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.generateButton {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 30%;
+    left: 30rem;
+    color: white;
+    background-color: var(--custom-blue-gradient);
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 7px 10px;
+    border: 3px solid white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+.generateButton:hover {
+    animation: bounce 1s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 130px;
+    width: 170px;
+
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #3372f2;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #3372f2;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-menu div:hover {
+    background-color: #247214;
+}
+
+.second-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 90px;
+    /* Adjust as needed */
+    margin-top: 10px;
+    width: 250px;
+}
+
+.second-dropdown .dropdown-toggle {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #3372f2;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.second-dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    /* left: 100%; Position it to the right of the toggle button */
+    display: none;
+    background-color: #3372f2;
+    color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.second-dropdown .dropdown-menu.show {
+    display: block;
+}
+
+.second-dropdown .dropdown-menu div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.second-dropdown .dropdown-menu div:hover {
+    background-color: #247214;
+}
+
+.third-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 110px;
+    /* Adjust as needed */
+    margin-top: 10px;
+    width: 200px
+}
+
+.third-dropdown .dropdown-toggle {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #3372f2;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.third-dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    /* left: 100%; Position it to the right of the toggle button */
+    display: none;
+    background-color: #3372f2;
+    color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.third-dropdown .dropdown-menu.show {
+    display: block;
+}
+
+.third-dropdown .dropdown-menu div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.third-dropdown .dropdown-menu div:hover {
+    background-color: #247214;
+}
+
+.third-dropdown .dropdown-option.selected {
+    background-color: #a3e5a3;
+    /* Adjust the color as needed */
+}
+
+
+/* ADMIN DASHBOARD */
+
+/* START HERE */
+
+/* MAIN DASHBOARD */
+
+.AdminDashboardOptions{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Add this line */
+    height: 70vh; /* Add this line */
+}
+
+.AdminDashboardOption{
+    width: 25rem; /* Increase width */
+    height: 25rem; /* Increase height */
+    background: linear-gradient(180deg, rgba(0, 85, 165, 0.359375) 0%, rgba(247, 251, 255, 0) 100%);
+    border-radius: 2rem;
+    text-align: center;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.AdminDashboardOption img{
+    height: 20rem;
+    width: 20rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.AdminDashboardOption h3{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    width: auto;
+    display: inline-block;
+    padding: .5rem 1.6rem;
+    border-radius: .7rem;
+    background: rgba(0, 85, 165, 1);
+
+}
+
+/* Countdown timer  */
+.timer-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.timer-container {
+    flex-grow: 1; /* Ensure the timer container expands to take available space */
+    display: flex;
+    /*justify-content: flex-end;  Align the timer to the far right */
+    margin-left: 550px;
+}
+/* MANAGE USERS */
+.UsersTableMain {
+    background: linear-gradient(180deg, rgba(0, 85, 165, 0.359375) 0%, rgba(118, 185, 248, 0.358316) 28.75%, rgba(126, 192, 255, 0.358925) 66.25%, rgba(9, 78, 143, 0.349642) 99.99%, rgba(247, 251, 255, 0) 100%);
+    max-width: 80rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.UsersTableMain h1,
+.UsersTableMain button {
+    border: none;
+    background: white;
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+    font-size: 1.2rem;
+    margin: 1rem;
+    outline: none;
+    font-weight: bolder;
+}
+
+.UsersTableMain table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    min-width: 50rem;
+}
+
+.UsersTableMain table th {
+    border: .1rem solid white;
+    border-collapse: collapse;
+    height: 5rem;
+}
+
+.UsersTableMain table th span {
+    padding: .4rem 1rem;
+    border-radius: .7rem;
+    text-align: center;
+    border: .2rem solid white;
+    background: #0055A5;
+    color: white;
+    font-size: 1.3rem;
+    white-space: nowrap; /* Prevent text wrapping */
+    min-width: 12rem; /* Set a minimum width for the column */
+}
+
+.UsersTableMain table td {
+    border: .1rem solid white;
+    border-collapse: collapse;
+    height: 5rem;
+
+}
+
+.UsersTableMain table td span {
+    padding: .2rem 1rem;
+    border-radius: .7rem;
+    text-align: center;
+    border: .2rem solid #007bff;
+    background: white;
+    color: black;
+    font-size: 1rem;
+
+}
+
+.UsersTableMain button {
+    display: block;
+    margin: 2rem auto;
+}
+
+.UsersTableMainImageDiv {
+    background: #000 !important;
+    display: inline-block;
+    width: 9rem;
+    /* height: 4rem; */
+}
+
+.UsersTableMainImage {
+    width: 7rem;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+}
+/* Edit Dataset */
+
+.EditDatasetView {
+    background: linear-gradient(180deg, rgba(0, 85, 165, 0.359375) 0%, rgba(247, 251, 255, 0) 100%);
+    max-width: 50rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 100%;
+    overflow-x: auto;
+    
+}
+
+.EditDataSetInput {
+    width: 100%;
+    /* margin: 1rem 0; */
+}
+
+.EditDataSetInput span {
+    display: inline-block;
+    width: 15rem;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    font-size: 1.3rem;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.EditDataSetInput label {
+    border: .2rem solid rgba(0, 85, 165, 1);
+    background: white;
+    padding: .3rem 1rem;
+    border-radius: .7rem;
+    color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    min-width: 18rem;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.EditDatasetCourses {
+    width: 100%;
+    padding: 1rem;
+}
+
+.EditDatasetCourses label {
+    display: inline-block;
+    width: 30%;
+    max-width: 10rem;
+    font-size: 1.1rem;
+    color: white;
+    line-height: 2rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        display: block;
+        margin: 1rem 0;
+    }
+}
+
+.EditDatasetCourses label:first-child {
+    text-decoration: underline;
+}
+
+.CheckboxInputBox {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background: #a3e5a3;
+    margin-right: .2rem;
+}
+
+.CheckboxInputBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.DataSetOptions {
+    width: 100%;
+    padding: 1rem;
+}
+
+.DataSetOptions button {
+    width: 10rem;
+    padding: .5rem;
+    background: white;
+    outline: none;
+    border: none;
+    color: black;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    border-radius: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.EditDataSetViewDataset {
+    display: block;
+    width: 10rem;
+    padding: .5rem;
+    background: #0256b0;
+    outline: none;
+    border: none;
+    color: white;
+    margin-left: auto;
+    font-size: 1.2rem;
+    border-radius: .8rem;
+    font-weight: bolder;
+    border: .2rem solid white;
+    cursor: pointer;
+}
+
+
+/* END HERE */

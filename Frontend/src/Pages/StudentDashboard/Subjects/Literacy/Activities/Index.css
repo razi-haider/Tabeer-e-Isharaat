@@ -1,0 +1,60 @@
+.helpIconContainer {
+    position: absolute;
+    align-items: center;
+    top: 0.5%;
+    left: 50%;
+    transform: translateX(-20%);
+    z-index: 1000; /* Ensure it's higher than overlapping elements */
+  }
+
+.helpIconContainer img {
+    cursor: pointer;
+    width: 80%;
+}
+
+
+
+@keyframes bounceAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust bounce height */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+  .helpIconContainer h1 {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    font-size: 1.7rem;
+    left: 20%;
+    margin-bottom: 10%;
+    animation: bounceAnimation 0.5s infinite; /* Adjust animation duration */
+}
+/* Define keyframes for the animation */
+@keyframes lightEffect {
+    0% {
+        opacity: 1; /* Start with full opacity */
+    }
+    50% {
+        opacity: 0; /* Fade out at midpoint */
+    }
+    100% {
+        opacity: 1; /* Fade in again */
+    }
+}
+
+/* Apply animation to the span element */
+.lightAnimation {
+    animation: lightEffect 2s ease-in-out infinite; /* Adjust duration and timing as needed */
+}
+
+.cardContainer {
+    margin-left: 40%; /* Adjust spacing between lightbulb and card */
+  }
+ 
